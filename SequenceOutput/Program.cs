@@ -22,12 +22,12 @@ namespace SequenceOutput
                 string str1 = parts[0];
                 string str2 = parts[1];
 
-                string longestCommonSubsequence = FindLongestCommonSubsequence(str1, str2);
+                string longestCommonSubsequence = LongestCommonSubsequence(str1, str2);
                 Console.WriteLine(longestCommonSubsequence);
             }
         }
 
-        static string FindLongestCommonSubsequence(string str1, string str2)
+        static string LongestCommonSubsequence(string str1, string str2)
         {
             int[,] dp = new int[str1.Length + 1, str2.Length + 1];
 
